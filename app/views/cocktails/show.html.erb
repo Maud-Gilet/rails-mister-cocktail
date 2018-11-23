@@ -15,9 +15,6 @@
         </li>
       <% end %>
     </ul>
-    <br>
-    <br>
-    <br>
     <div class="btn add-link">
        <%= link_to new_cocktail_dose_path(@cocktail) do %>
         <i class="fas fa-plus"></i>
@@ -34,7 +31,7 @@
      <i class="fab fa-pinterest"></i>
     </div>
   </div>
-  <div id="cocktail-picture"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), cl_image_path @cocktail.photo, height: 200, width: 200, crop: :fill">
+  <div id="cocktail-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%=cl_image_path @cocktail.photo, crop: :fill %>')">
   </div>
 </div>
 

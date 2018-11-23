@@ -36,17 +36,49 @@ Cocktail.destroy_all
 
 birini = {
   name: 'Birini',
-  remote_photo_url: 'https://loremflickr.com/300/300/beer'
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
 }
 mazout = {
   name: 'Mazout',
-  remote_photo_url: 'https://loremflickr.com/300/300/beer'
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
 }
 embuscade = {
   name: 'Embuscade',
-  remote_photo_url: 'https://loremflickr.com/300/300/beer'
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
+}
+monaco = {
+  name: 'Monaco',
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
+}
+picon = {
+  name: 'Beer Picon',
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
+}
+molotov = {
+  name: 'Molotov',
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
+}
+velvet = {
+  name: 'Black Velvet',
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
+}
+panache = {
+  name: 'Embuscade',
+  remote_photo_url: 'https://loremflickr.com/300/300/beer,cocktail'
 }
 
 Cocktail.create(birini)
 Cocktail.create(mazout)
 Cocktail.create(embuscade)
+Cocktail.create(monaco)
+Cocktail.create(picon)
+Cocktail.create(molotov)
+Cocktail.create(velvet)
+Cocktail.create(panache)
+
+
+
+
+
+
+
