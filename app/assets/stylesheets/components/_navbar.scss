@@ -6,20 +6,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-/* Basic navbar item */
-.navbar-item {
-  cursor: pointer;
-  padding: 0 20px;
+  position:relative;
 }
 
 /* Navbar link */
 .navbar-link {
   color: white;
   font-size: 18px;
+  position:absolute;
+  right: 5vw;
+  margin-right: 0px;
   :hover {
   color: #da552f;
   text-decoration: none;
+  }
+}
+
+.navbar-logo {
+  position:absolute;
+  left: 5vw;
+  img {
+    vertical-align: unset;
   }
 }
