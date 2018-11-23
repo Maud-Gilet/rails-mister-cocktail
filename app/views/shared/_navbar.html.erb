@@ -1,0 +1,22 @@
+<div class="navbar navbar-fixed-top">
+
+  <!-- link_to "Search", "#", class: "navbar-item navbar-link"  -->
+
+    <%= link_to "#" do %>
+      <i class="fas fa-search navbar-item navbar-link">Search</i>
+    <% end %>
+
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-item" do %>
+    <%= image_tag "logo.png", height: 80 %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+    <%= link_to "New Cocktail", new_cocktail_path, class: "navbar-item navbar-link btn btn-info" %>
+
+  </div>
+
+</div>

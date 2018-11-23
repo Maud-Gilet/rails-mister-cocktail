@@ -1,0 +1,27 @@
+.home-banner {
+  // background-image: linear-gradient(#112b3870, rgba(162, 126, 22, 0.2)), url('https://previews.123rf.com/images/suljo/suljo0809/suljo080900001/3599373-gros-plan-sur-les-bulles-de-la-bière.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 22vh;
+  position: relative;
+  h1 {
+    color: white;
+    font-size: 60px;
+  }
+  h2 {
+    color: #ffffff9c;
+    margin-bottom: 80px;
+    font-size: 35px;
+  }
+  p {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    bottom: 40px;
+    left: 620px;
+  }
+}
+
+

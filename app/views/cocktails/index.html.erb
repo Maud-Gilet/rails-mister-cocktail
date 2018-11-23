@@ -1,0 +1,37 @@
+<div class="home-banner">
+   <h2>Bored with insipid mojitos <br>and sweetish margaritas?</h2>
+    <h1>Why don't you try BEER COCKTAIL?</h1>
+    <br><br>
+    <%= link_to "Random Recipe", new_cocktail_path, class: "navbar-item navbar-link btn btn-success" %>
+    <p><i class="fas fa-angle-double-down"></i></p>
+</div>
+
+
+<div class="index-container">
+  <div class="cards-container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for a specific cocktail">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://via.placeholder.com/350/180');">
+            <div class="card-description">
+              <h2> <%= cocktail.name %> </h2>
+            </div>
+            <div class= "card-link">
+              <p><%= link_to '', cocktail_path(cocktail) %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

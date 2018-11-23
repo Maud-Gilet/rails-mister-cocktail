@@ -1,0 +1,39 @@
+<div class='container show-container'>
+  <div id='cocktail-title' class='cocktail-card'>
+     <h1><%= @cocktail.name %></h1>
+  </div>
+  <div id='cocktail-recipe' class='cocktail-card'>
+    <p>Recipe: </p>
+    <ul>
+    <% @doses.each do |dose| %>
+      <li><%= dose.description %> <%= dose.ingredient.name %>
+        <%= link_to dose_path(dose),
+        method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+          <i class="far fa-trash-alt"></i>
+        <% end %>
+        </li>
+      <% end %>
+    </ul>
+    <br>
+    <br>
+    <br>
+     <%= link_to 'Add a new ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-warning add-btn' %>
+  </div>
+  <div id='cocktail-share' class='cocktail-card'>
+    <h4>Share<h4>
+    <div class='share-icons'>
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-twitter"></i>
+     <i class="fab fa-pinterest"></i>
+    </div>
+  </div>
+  <div id="cocktail-picture" class='cocktail-card'>
+    <img src="https://via.placeholder.com/180/180" alt="">
+  </div>
+
+</div>
+
+<div>
+  <%= link_to 'Back to list', cocktails_path, class: 'btn btn-primary' %>
+</div>
