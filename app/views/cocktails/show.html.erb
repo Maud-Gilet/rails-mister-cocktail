@@ -3,7 +3,7 @@
      <h1><%= @cocktail.name %></h1>
   </div>
   <div id='cocktail-recipe' class='cocktail-card'>
-    <p>Recipe: </p>
+    <p>Recipe </p>
     <ul>
     <% @doses.each do |dose| %>
       <li><%= dose.description %> <%= dose.ingredient.name %>
