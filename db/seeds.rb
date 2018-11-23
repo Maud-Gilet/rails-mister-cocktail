@@ -9,22 +9,14 @@ require 'faker'
 
 Ingredient.destroy_all
 
-spices_attr = []
-fruits_attr = []
-
-5.times do
-  h = {
-    name: Faker::Food.spice
-  }
-  spices_attr << h
-end
-
-5.times do
-  h = {
-    name: Faker::Food.fruits
-  }
-  fruits_attr << h
-end
+spices_attr = ['Pepper', 'Ginger', 'Basil', 'Cardamom']
+fruits_attr = ['Lemon', 'Strawberry', 'Mint', 'Grenadine']
+beers_attr = ['Ale', 'Stout', 'Lager', 'IPA', 'Wheat', 'Red Ale']
+alcohol_attr = ['Vodka', 'Coca', 'Whisky', 'Lemonade', 'Sugar', 'Gin']
 
 Ingredient.create(spices_attr)
 Ingredient.create(fruits_attr)
+Ingredient.create(beers_attr)
+Ingredient.create(alcohol_attr)
+
+Cocktail.destroy_all
