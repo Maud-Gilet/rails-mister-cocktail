@@ -19,14 +19,12 @@
 <div class="index-container">
   <div class="cards-container">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for a specific cocktail">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
+      <div class="input-group search-bar">
+        <input type="text" class="form-control" id="search-input" placeholder="Looking for a specific cocktail or ingredient?">
+        <span class="input-group-btn">
+          <button class="btn btn-info" id="search-btn" type="button">Search!</button>
+        </span>
+      </div><!-- /input-group -->
     </div><!-- /.row -->
     <div class="row">
       <% @cocktails.each do |cocktail| %>

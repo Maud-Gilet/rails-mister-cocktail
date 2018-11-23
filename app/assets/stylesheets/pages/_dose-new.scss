@@ -1,0 +1,33 @@
+.new-dose {
+  text-align: center;
+  h1 {
+    color:white
+  }
+}
+.new-dose-form {
+  width: 40vw;
+  position: relative;
+  padding: 30px;
+  color: white;
+  font-weight:lighter;
+}
+#btn-create-dose {
+  margin-top: 30px;
+  :hover {
+    color: $green;
+    background: white;
+  }
+}
+
+#btn-back-to-cocktail {
+  position: absolute;
+  bottom: -50px;
+  :hover {
+    color: $red;
+    background: white;
+  }
+}
+
+#new_dose > div.form-group label {
+  font-weight: normal;
+}

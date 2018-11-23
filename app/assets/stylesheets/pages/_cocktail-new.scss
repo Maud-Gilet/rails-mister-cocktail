@@ -1,0 +1,31 @@
+.new-cocktail {
+  text-align: center;
+  h1 {
+    color:white
+  }
+}
+.new-cocktail-form {
+  width: 40vw;
+  position: relative;
+  padding: 30px;
+  color: white;
+  font-weight:lighter;
+}
+#btn-create-cocktail {
+  margin-top: 30px;
+  :hover {
+    color: $green;
+    background: white;
+  }
+}
+#new_cocktail label {
+  font-weight: normal;
+}
+#btn-back-to-home {
+  position: absolute;
+  bottom: -50px;
+  :hover {
+    color: $red;
+    background: white;
+  }
+}

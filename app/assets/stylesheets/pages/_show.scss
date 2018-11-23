@@ -1,12 +1,11 @@
 .show-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1f 1fr;
-  height:  auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height:  70vh;
   background: white;
-  padding-top: 100px;
   width: auto;
-  margin: 120px 80px;
+  margin: 40px 80px;
   border-radius: 4px;
   padding: 30px;
 }
@@ -26,22 +25,27 @@
   p {
     text-align: center;
   }
-  grid-row: 3 / span 5;
-  grid-column: 1 / span 3;
+  grid-row: 2 / span 5;
+  grid-column: 1 / span 5;
 }
 #cocktail-share {
-  grid-row: 6 / span 2;
-  grid-column: 4 / span 2;
+  grid-row: 4 / span 3;
+  grid-column: 6 / span 2;
   text-align: center;
   padding: 20px;
 }
 #cocktail-picture {
-  grid-row: 3 / span 2;
-  grid-column: 4 / span 2;
+  grid-row: 1 / span 3;
+  grid-column: 6 / span 2;
   text-align: center;
 }
-.add-btn {
+.add-link {
   border-radius: 3px;
   grid-row: 6 / span 1;
   grid-column: 2 / span 1;
+  margin-bottom: -20px;
+}
+.back-btn {
+  margin-left:80px;
+  margin-top: -20px;
 }

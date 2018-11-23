@@ -17,8 +17,10 @@
   right: 5vw;
   margin-right: 0px;
   :hover {
-  color: #da552f;
+  color: $yellow;
   text-decoration: none;
+  border: 2px solid $yellow;
+  background: white;
   }
 }
 

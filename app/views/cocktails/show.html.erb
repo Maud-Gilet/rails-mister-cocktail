@@ -18,7 +18,13 @@
     <br>
     <br>
     <br>
-     <%= link_to 'Add a new ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-warning add-btn' %>
+    <div class="btn add-link">
+       <%= link_to new_cocktail_dose_path(@cocktail) do %>
+        <i class="fas fa-plus"></i>
+      <% end %>
+      <%= link_to 'Add a new ingredient',new_cocktail_dose_path(@cocktail) %>
+    </div>
+
   </div>
   <div id='cocktail-share' class='cocktail-card'>
     <h4>Share<h4>
@@ -35,5 +41,5 @@
 </div>
 
 <div>
-  <%= link_to 'Back to list', cocktails_path, class: 'btn btn-primary' %>
+  <%= link_to 'Back to list', cocktails_path, class: 'btn btn-primary back-btn' %>
 </div>

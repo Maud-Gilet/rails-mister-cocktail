@@ -1,6 +1,8 @@
-<h1>Add a new cocktail</h1>
+<div class="new-cocktail">
+  <h1>Add a new cocktail</h1>
+</div>
 
-<div class='container'>
+<div class='container new-cocktail-form'>
   <%= simple_form_for @cocktail do |f| %>
     <% if @cocktail.errors.any? %>
       <div class="errors-container">
@@ -12,6 +14,7 @@
       </div>
     <% end %>
     <%= f.input :name %>
-    <%= f.button :submit %>
+    <%= f.button :submit, id: 'btn-create-cocktail', class: 'btn btn-success' %>
   <% end %>
+   <%= link_to 'Cancel', cocktails_path, class: "btn btn-danger", id: "btn-back-to-home" %>
 </div>
