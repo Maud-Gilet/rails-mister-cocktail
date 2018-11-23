@@ -34,10 +34,8 @@
      <i class="fab fa-pinterest"></i>
     </div>
   </div>
-  <div id="cocktail-picture" class='cocktail-card'>
-    <%= cl_image_tag @cocktail.photo, height: 200, width: 200, crop: :fill %>
+  <div id="cocktail-picture"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), cl_image_path @cocktail.photo, height: 200, width: 200, crop: :fill">
   </div>
-
 </div>
 
 <div>
