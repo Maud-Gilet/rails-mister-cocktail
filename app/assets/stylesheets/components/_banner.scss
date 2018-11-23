@@ -13,14 +13,22 @@
   h2 {
     color: #ffffff9c;
     margin-bottom: 80px;
+    margin-top: 0px;
     font-size: 35px;
   }
+  a {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  a:hover {
+    background: white;
+    border: 2px solid $green;
+    color: $green;
+  }
   p {
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    bottom: 40px;
-    left: 620px;
+    color: #ffffff9c;
+    font-size: 20px;
+    margin-top: 80px;
   }
 }
 
